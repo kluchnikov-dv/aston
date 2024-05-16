@@ -2,7 +2,8 @@ package com.aston.homework.lecture1.task4;
 
 public class BoxDemo {
         
-    public static void main(String[] args) {        
+    public static void main(String[] args) {      
+        //Перегрузка конструкторов  
         Box box1 = new Box();
         Box box2 = new Box(5, 10, 15);
         Box box3 = new Box(10);
