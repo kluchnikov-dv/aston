@@ -1,6 +1,9 @@
 package com.aston.homework.lecture1.task1;
 
-public class FigureDemo {
+/**
+* 1. Создание нескольких классов с разными полями, конструкторами и методами.
+*/
+public class Demo {
    
     public static void main(String[] args) {
         
@@ -38,7 +41,7 @@ public class FigureDemo {
         Rectangle efkg = new Rectangle(e, f, k, g);
 
         System.out.print(" EFKG = ");
-        abcd.print('E', 'F', 'K', 'G');
+           abcd.print('E', 'F', 'K', 'G');
         System.out.println();
     }
 }

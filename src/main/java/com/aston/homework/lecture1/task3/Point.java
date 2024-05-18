@@ -1,4 +1,4 @@
-package com.aston.homework.lecture1.task1;
+package com.aston.homework.lecture1.task3;
 
 /**
 * класс Point - точка
@@ -9,27 +9,18 @@ public class Point {
      * Символ обозначающий точку
      */
     private char pointChar = '?'; 
-
+    
     /**
      * координата x точки Point
      */
-    private int x;
+    int x;
     
     /**
      * координата y точки Point
      */
-    private int y;
+    int y;
 
     /**
-     * Получить значение координаты х точки Point
-     * 
-     * @return получить x
-     */
-    public int getX() {
-        return x;
-    }
-
-     /**
      * Установить значение cимвола точки pointChar
      * 
      * @param установить pointChar
@@ -47,6 +38,15 @@ public class Point {
         return pointChar;
     }
 
+
+    /**
+     * Получить значение координаты х точки Point
+     * 
+     * @return получить x
+     */
+    public int getX() {
+        return x;
+    }
 
     /**
      * Установить значение координаты х точки Point
@@ -76,15 +76,15 @@ public class Point {
     }
 
     /**
-    * Установить значение координат x и y точки Point
-    * 
-    * @param установить x и y
-    */
+     * Установить значение координат x и y точки Point
+     * 
+     * @param установить x и y
+     */
     public void setXY(int x, int y) {
         this.x = x;
         this.y = y;
     }
-    
+
     /**
      * Конструктор точки Point по умолчанию, назначит координатам x и у значение 0 
      */
@@ -128,8 +128,8 @@ public class Point {
      * Конструктор класса Point - точка
      * 
      * @param pointChar символ точки
-     * @param x  координата X
-     * @param y  координата Y
+     * @param x - координата X
+     * @param y - координата Y
      */
     Point(char pointChar, int x, int y) {
         this.pointChar = pointChar;
@@ -166,7 +166,7 @@ public class Point {
     void print(char pointChar) {
         System.out.print(pointChar + "(" + x + "," + y + ") ");
     }
-    
+
     /**
      * Вывод координат точки Point, в формате: A(x,y)
      */

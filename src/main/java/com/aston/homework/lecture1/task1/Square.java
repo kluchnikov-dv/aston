@@ -1,5 +1,8 @@
 package com.aston.homework.lecture1.task1;
 
+/**
+* класс Square - квадрат
+*/
 public class Square {
 
     /**
@@ -23,6 +26,8 @@ public class Square {
     private Point d;
 
     /**
+     * Конструктор класса Square - квадрат, точками против часовой стрелки
+     * 
      * @param a точка A
      * @param b точка B
      * @param c точка С
@@ -35,15 +40,17 @@ public class Square {
         this.c = c;
         this.d = d; 
         
-        //Обозначение квадрата точками против часовой стрелки
+        //Проверить, квадрат ли это
         if (a.getY() == b.getY() && b.getX() == c.getX() && c.getY() == d.getY() && d.getX() == a.getX() && (b.getX() - a.getX()) == (c.getY() - b.getY())) {                
-            System.out.print("Это квадрат.");                      
+            System.out.print("Это квадрат:");                      
         } else {
-            System.out.print("Это не квадрат.");                
+            System.out.print("Это не квадрат:");                
         }
     }
 
-     /**
+    /**
+     * Вывод точек квадрата Square в формате: A(x,y)B(x,y)C(x,y)D(x,y)      
+     * 
      * @param charPointA символ точки A
      * @param charPointB символ точки B
      * @param charPointC символ точки C

@@ -1,5 +1,8 @@
 package com.aston.homework.lecture1.task1;
 
+/**
+* класс Line - линия
+*/
 public class Line {
     
     /**
@@ -12,8 +15,9 @@ public class Line {
      */
     private Point b;
 
-
     /**
+     * Констурктор класса Line - линия
+     * 
      * @param a точка A
      * @param b точка B
      */
@@ -23,6 +27,8 @@ public class Line {
     }
     
     /**
+     * Вывод линии Line в формате: A(x,y)B(x,y)
+     * 
      * @param charPointA символ точки A
      * @param charPointB символ точки B
      */

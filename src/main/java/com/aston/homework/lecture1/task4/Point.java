@@ -1,10 +1,10 @@
-package com.aston.homework.lecture1.task1;
+package com.aston.homework.lecture1.task4;
 
 /**
 * класс Point - точка
 */
 public class Point {
-    
+     
     /**
      * Символ обозначающий точку
      */
@@ -21,15 +21,6 @@ public class Point {
     private int y;
 
     /**
-     * Получить значение координаты х точки Point
-     * 
-     * @return получить x
-     */
-    public int getX() {
-        return x;
-    }
-
-     /**
      * Установить значение cимвола точки pointChar
      * 
      * @param установить pointChar
@@ -47,6 +38,15 @@ public class Point {
         return pointChar;
     }
 
+
+    /**
+     * Получить значение координаты х точки Point
+     * 
+     * @return получить x
+     */
+    public int getX() {
+        return x;
+    }
 
     /**
      * Установить значение координаты х точки Point
@@ -76,10 +76,10 @@ public class Point {
     }
 
     /**
-    * Установить значение координат x и y точки Point
-    * 
-    * @param установить x и y
-    */
+     * Установить значение координат x и y точки Point
+     * 
+     * @param установить x и y
+     */
     public void setXY(int x, int y) {
         this.x = x;
         this.y = y;
@@ -92,6 +92,17 @@ public class Point {
         this.x = this.y = 0;
     }
 
+    /**
+     * Констурктор класса Point - точка
+     * 
+     * @param x координата X
+     * @param y координата Y
+     */
+    Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    
     /**
      * Констурктор класса Point - координаты x и y совпадают
      * 
@@ -114,22 +125,11 @@ public class Point {
     }
 
     /**
-     * Констурктор класса Point - точка
-     * 
-     * @param x координата X
-     * @param y координата Y
-     */
-    Point(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    /**
      * Конструктор класса Point - точка
      * 
      * @param pointChar символ точки
-     * @param x  координата X
-     * @param y  координата Y
+     * @param x - координата X
+     * @param y - координата Y
      */
     Point(char pointChar, int x, int y) {
         this.pointChar = pointChar;
@@ -157,7 +157,7 @@ public class Point {
         this.pointChar = pointChar;
         this.x = this.y = 0;
     }
-    
+
     /**
      * Вывод координат точки Point,в формате: A(x,y)
      * 
@@ -166,7 +166,7 @@ public class Point {
     void print(char pointChar) {
         System.out.print(pointChar + "(" + x + "," + y + ") ");
     }
-    
+
     /**
      * Вывод координат точки Point, в формате: A(x,y)
      */

@@ -1,5 +1,8 @@
 package com.aston.homework.lecture1.task1;
 
+/**
+* класс Rectangle - прямоугольник
+*/
 public class Rectangle {
     
     /**
@@ -23,6 +26,8 @@ public class Rectangle {
     private Point d;
 
     /**
+     * Конструктор класса Rectanlge - прямогугольник, точками против часовой стрелки
+     * 
      * @param a точка A
      * @param b точка B
      * @param c точка С
@@ -35,7 +40,7 @@ public class Rectangle {
         this.c = c;
         this.d = d;   
 
-        //Обозначение прямоугольника точками против часовой стрелки
+        //Проверить, прямоугольник ли это
         if (a.getY() == b.getY() && b.getX() == c.getX() && c.getY() == d.getY() && d.getX() == a.getX()) {
             System.out.print("Это прямоугольник.");
         } else {
@@ -44,6 +49,8 @@ public class Rectangle {
     }
 
     /**
+     * Вывод точек прямоуголника Rectanlge в формате: A(x,y)B(x,y)C(x,y)D(x,y)
+     * 
      * @param charPointA символ точки A
      * @param charPointB символ точки B
      * @param charPointC символ точки C
