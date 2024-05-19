@@ -3,9 +3,9 @@ package com.aston.homework.lecture2.task2;
 import java.util.Arrays;
 
 /**
- * Создайте класс ImmutablePerson с полями String name, int age, List<String> hobbies. Создайте класс
- * MuttablePerson с такими же полями (String name, int age, List<String> hobbies). Создайте класс Runner и 
- * проверьте изменяемлсть и неизменяемость объектов.
+ * 2.2 Создайте класс ImmutablePerson с полями String name, int age, List<String> hobbies. Создайте класс
+ *     MuttablePerson с такими же полями (String name, int age, List<String> hobbies). Создайте класс Runner и 
+ *     проверьте изменяемлсть и неизменяемость объектов.
  */
 public class Runner {
     public static void main(String[] args) {
