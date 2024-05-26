@@ -14,7 +14,7 @@ public class CompareString {
 
 
     /**
-     * @param numberOfString Колличество строк, которые необходимо сравнить
+     * @param numberOfString Колличество строк, которые необходимо сравнить. Прочитать с консоли.
      */
     CompareString(int numberOfString) {        
         stringArray = new String[numberOfString];
@@ -24,6 +24,7 @@ public class CompareString {
         for (int i = 0; i < stringArray.length; i++) {
             stringArray[i] = scanner.nextLine();
         }
+        scanner.close();
     }
     
     /**     
