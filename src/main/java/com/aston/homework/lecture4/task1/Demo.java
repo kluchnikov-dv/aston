@@ -19,7 +19,7 @@ public class Demo {
         
         ArrayList<String> countryArrayList = new ArrayList<String>(Arrays.asList("ЮАР", "Саудовская Аравия", "ОАЭ", "Эфиопия", "Египет"));
         
-        System.out.println("Списое стран при создании ArrayList:");
+        System.out.println("Список стран при создании ArrayList:");
         System.out.println(countryArrayList);
 
         //Добавить 3 страны
