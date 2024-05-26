@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class CompareString {
      
     /**
-     * Массив из 3-х строк
+     * Массив строк
      */
     private  String[] stringArray;
 
