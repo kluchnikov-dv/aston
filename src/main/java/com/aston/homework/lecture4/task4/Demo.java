@@ -2,6 +2,7 @@ package com.aston.homework.lecture4.task4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -62,9 +63,15 @@ public class Demo {
      */
     public static void removeStudentsLowGPA() {
 
-        for(int i = 0; i < students.size(); i++) {
-            if (students.get(i).getGpa() < 3) students.remove(i);
-            else students.get(i).setCourse(students.get(i).getCourse() + 1);
+        // for(int i = 0; i < students.size(); i++) {
+        //     if (students.get(i).getGpa() < 3) students.remove(i);
+        //     else students.get(i).setCourse(students.get(i).getCourse() + 1);
+        // }
+        
+        // Другой способ
+        Iterator<Student> iterator = students.iterator();
+        while (iterator.hasNext()){
+            if (iterator.next().getGpa() < 3) iterator.remove();
         }
     }
 
